@@ -1,8 +1,16 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+// component imports
+import Banner from '../components/Banner'
+// style imports
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
+
+  const handleOnBannerButtonClick = () => {
+    console.log("Clicked");
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -12,10 +20,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Coffee Connoissuer
-        </h1>
-
+        <Banner buttonText="view stores nearby" handleOnClick={handleOnBannerButtonClick} />
       </main>
     </div>
   )
