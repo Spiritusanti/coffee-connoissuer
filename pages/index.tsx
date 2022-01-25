@@ -1,5 +1,9 @@
 import type { NextPage } from 'next'
+// import Link from "next/link";
+import Image from "next/image";
 import Head from 'next/head'
+// image imports
+import heroImage from "../public/static/hero-image.png";
 // component imports
 import Banner from '../components/Banner'
 // style imports
@@ -21,6 +25,9 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <Banner buttonText="view stores nearby" handleOnClick={handleOnBannerButtonClick} />
+        <div className={styles.heroImage}>
+          <Image src={heroImage} alt="hero image" width={700} height={400}/>
+        </div>
       </main>
     </div>
   )
