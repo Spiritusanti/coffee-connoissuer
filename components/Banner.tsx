@@ -1,5 +1,5 @@
 import { FC } from "react";
-import styles from "../styles/banner.module.css";
+import styles from "./banner.module.css";
 
 interface BannerProps {
     buttonText: string;

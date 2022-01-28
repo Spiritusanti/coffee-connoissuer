@@ -2,6 +2,7 @@ import { NextPage } from "next";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
+
 const CoffeeStore: NextPage = () => {
     const router = useRouter();
     const pid: string | string[] | undefined = router.query.id;
